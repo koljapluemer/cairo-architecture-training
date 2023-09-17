@@ -9,12 +9,12 @@ let unitsPracticedYesterday = 0;
 // see if wordBank is in localStorage, if so, load it,  if not, set it to the imported words
   wordBank.value = words;
 
-// if (!localStorage.getItem("wordBank")) {
-//   wordBank.value = words;
-// } else {
-//   // if it is in localStorage, set the wordBank to the localStorage value
-//   wordBank.value = JSON.parse(localStorage.getItem("wordBank"));
-// }
+if (!localStorage.getItem("wordBank")) {
+  wordBank.value = words;
+} else {
+  // if it is in localStorage, set the wordBank to the localStorage value
+  wordBank.value = JSON.parse(localStorage.getItem("wordBank"));
+}
 
 // same with localStorage stats
 let stats = {};
